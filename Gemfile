@@ -19,8 +19,14 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'faker'
   gem 'rails-erd'
+  gem 'rspec-rails'
 end
 
 group :development do
   gem 'web-console'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'webdrivers', require: false
 end
